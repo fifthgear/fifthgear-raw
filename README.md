@@ -7,8 +7,8 @@ This document covers the guidelines for interacting with a specific clients Ware
 
 ##Base API URL 
 
-- **TESTING** https://commerceservices.infifthgear.com/test/v2.0/CommerceServices.svc
-- **PRODUCTION** https://commerceservices.infifthgear.com/v2.0/CommerceServices.svc
+- **TESTING** https://commerceservices.infifthgear.com/test/v2.0/Rest/CommerceServices.svc/
+- **PRODUCTION** https://commerceservices.infifthgear.com/v2.0/Rest/CommerceServices.svc/
 
 --------------------
 
@@ -21,7 +21,7 @@ For all requests you must provide a CompanyID, Username and Password. If you are
 
 In this example we will be looking up the inventory levels for a specific item in our warehouses.
 
-**POST:** https://commerceservices.infifthgear.com/test/v2.0/CommerceServices.svc/ItemInventoryLookup
+**POST:** https://commerceservices.infifthgear.com/test/v2.0/Rest/CommerceServices.svc/ItemInventoryLookup
 
 **Headers** 
 
