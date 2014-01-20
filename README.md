@@ -75,7 +75,7 @@ We offer the following calls to your Fifth Gear Warehouse
 
 ##ItemLookup##
 #### URL
- /v2.0/CommerceServices.svc/ItemLookup
+ /v2.0/CommerceServices.svc/Rest/ItemLookup
 
 
 #### Request
@@ -163,7 +163,7 @@ We offer the following calls to your Fifth Gear Warehouse
 ##ItemInventoryLookup##
 
 #### URL
- /v2.0/CommerceServices.svc/ItemInventoryLookup
+ /v2.0/CommerceServices.svc/Rest/ItemInventoryLookup
 
 ### Request
 
@@ -190,7 +190,7 @@ We offer the following calls to your Fifth Gear Warehouse
 ##ItemInventoryBulkLookup##
 
 #### URL
- /v2.0/CommerceServices.svc/ItemInventoryBulkLookup
+ /v2.0/CommerceServices.svc/Rest/ItemInventoryBulkLookup
 
 
 #### Request
@@ -234,7 +234,7 @@ We offer the following calls to your Fifth Gear Warehouse
 ##ExportItemPersonalizationData##
 
 #### URL
-/v2.0/CommerceServices.svc/ExportItemPersonalizationData
+/v2.0/CommerceServices.svc/Rest/ExportItemPersonalizationData
 
 #### Request
 
@@ -294,7 +294,7 @@ We offer the following calls to your Fifth Gear Warehouse
 ##OrderStatusLookupByRefNumber
 
 ####URL
-/v2.0/CommerceServices.svc/OrderStatusLookupByRefNumber
+/v2.0/CommerceServices.svc/Rest/OrderStatusLookupByRefNumber
 
 #### Request
 
@@ -337,7 +337,7 @@ We offer the following calls to your Fifth Gear Warehouse
 ## CartSubmit
 
 #### URL
-/v2.0/CommerceServices.svc/CartSubmit
+/v2.0/CommerceServices.svc/Rest/CartSubmit
 
 #### Request
 
