@@ -61,7 +61,7 @@ All requests MUST be sent through HTTPS
 --------------------
 
 #API Calls
-We offer the following calls to your Fifth Gear Warehouse
+We offer the following calls to your Fifth Gear Warehouse.
 
 - **ItemLookup** - access details on any product
 - **ItemInventoryLookup** - find the current inventory levels for a given product
