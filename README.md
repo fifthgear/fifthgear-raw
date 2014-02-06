@@ -74,6 +74,8 @@ We offer the following calls to your Fifth Gear Warehouse
 --------------------
 
 ##ItemLookup##
+Lookup the item details for a given sku. Includes pricing, product attributes, available to purchase qty, categories, description, personalization data and more.
+
 #### URL
  /v2.0/CommerceServices.svc/Rest/ItemLookup
 
@@ -141,7 +143,7 @@ We offer the following calls to your Fifth Gear Warehouse
             ],
             "RelatedItems": null,
             "ReturnPolicy": null,
-            "SalesName": "ZaggoCare System",
+            "SalesName": "Product Name",
             "SelectedAttributes": [],
             "SelectedQuantity": 0,
             "SelectedUOMData": null,
@@ -161,6 +163,7 @@ We offer the following calls to your Fifth Gear Warehouse
 --------------------
 
 ##ItemInventoryLookup##
+Look up the current inventory qty, back order status and total sku's on hand for any sku in our warehouse. 
 
 #### URL
  /v2.0/CommerceServices.svc/Rest/ItemInventoryLookup
@@ -188,6 +191,7 @@ We offer the following calls to your Fifth Gear Warehouse
 --------------------
 
 ##ItemInventoryBulkLookup##
+Lookup available inventory for a range of skus. 
 
 #### URL
  /v2.0/CommerceServices.svc/Rest/ItemInventoryBulkLookup
@@ -305,7 +309,38 @@ We offer the following calls to your Fifth Gear Warehouse
 
 #### Response
 
-   COMING SOON
+    {
+      "OperationRequest": {
+        "Arguments": null,
+        "Errors": null,
+        "HTTPHeaders": null,
+        "RequestId": null,
+        "RequestProcessingTime": 236
+      },
+      "Response": {
+        "DateShipped": "20140119",
+        "ExternalCustomerNumber": null,
+        "ExternalOrderNumber": null,
+        "OrderNumber": "corp-2333471118",
+        "ShipmentStatus": [],
+        "Status": "Shipped",
+        "TrackingDetails": {
+          "CarrierURL": "www.fedex.com",
+          "TrackingData": [
+            {
+              "ItemName": null,
+              "ItemNumber": "SKU1",
+              "LineDateShipped": null,
+              "LineStatus": "NotYetShipped",
+              "QtyShipped": "1.0000",
+              "TrackingNumber": "12345123451234512345"
+            }
+          ],
+          "TrackingUrl": "http://fedex.com/Tracking?ascend_header=1&clienttype=dotcom&cntry_code=us&language=english&tracknumbers=",
+          "TrackingUrlSeperator": ""
+        }
+      }
+    }
 
 
 --------------------
