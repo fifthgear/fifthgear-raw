@@ -364,7 +364,115 @@ Lookup available inventory for a range of skus.
 
 #### Response
 
-   COMING SOON
+    {
+      "OperationRequest": null,
+      "Response": {
+        "Statuses": [
+          {
+            "DateShipped": null,
+            "ExternalCustomerNumber": "",
+            "ExternalOrderNumber": "ord-1034561",
+            "OrderNumber": "10",
+            "ShipmentStatus": [
+              {
+                "ShipmentNumber": null,
+                "Status": null,
+                "TrackingDetails": {
+                  "CarrierURL": "",
+                  "TrackingData": [
+                    {
+                      "ItemName": "AdultShinyCap&Gown-Red-51",
+                      "ItemNumber": "GS-CGAS-RED-51",
+                      "LineDateShipped": null,
+                      "LineStatus": null,
+                      "QtyShipped": "6.0000",
+                      "TrackingNumber": "911978371406530"
+                    }
+                  ],
+                  "TrackingUrl": "",
+                  "TrackingUrlSeperator": ""
+                }
+              }
+            ],
+            "Status": "Closed",
+            "TrackingDetails": {
+              "CarrierURL": null,
+              "TrackingData": [],
+              "TrackingUrl": null,
+              "TrackingUrlSeperator": null
+            }
+          },
+          {
+            "DateShipped": null,
+            "ExternalCustomerNumber": "",
+            "ExternalOrderNumber": "ord-100002",
+            "OrderNumber": "133",
+            "ShipmentStatus": [
+              {
+                "ShipmentNumber": null,
+                "Status": null,
+                "TrackingDetails": {
+                  "CarrierURL": "",
+                  "TrackingData": [
+                    {
+                      "ItemName": "AdultMatteCap&Gown-Black-45",
+                      "ItemNumber": "GS-CGAM-BLK-45",
+                      "LineDateShipped": null,
+                      "LineStatus": null,
+                      "QtyShipped": "3.0000",
+                      "TrackingNumber": "911978371438562"
+                    },
+                    {
+                      "ItemName": "AdultMatteCap&Gown-Black-51",
+                      "ItemNumber": "GS-CGAM-BLK-51",
+                      "LineDateShipped": null,
+                      "LineStatus": null,
+                      "QtyShipped": "12.0000",
+                      "TrackingNumber": "911978371438562"
+                    }
+                  ],
+                  "TrackingUrl": "",
+                  "TrackingUrlSeperator": ""
+                }
+              }
+            ],
+            "Status": "Closed",
+            "TrackingDetails": {
+              "CarrierURL": null,
+              "TrackingData": [],
+              "TrackingUrl": null,
+              "TrackingUrlSeperator": null
+            }
+          },
+          {
+            "DateShipped": null,
+            "ExternalCustomerNumber": "",
+            "ExternalOrderNumber": "Ord3",
+            "OrderNumber": "Test-157",
+            "ShipmentStatus": [
+              {
+                "ShipmentNumber": null,
+                "Status": null,
+                "TrackingDetails": {
+                  "CarrierURL": "",
+                  "TrackingData": [],
+                  "TrackingUrl": "",
+                  "TrackingUrlSeperator": ""
+                }
+              }
+            ],
+            "Status": "Cancelled",
+            "TrackingDetails": {
+              "CarrierURL": null,
+              "TrackingData": [],
+              "TrackingUrl": null,
+              "TrackingUrlSeperator": null
+            }
+          }
+        ],
+        "TotalOrderResults": 3
+      }
+    }
 
 
 --------------------
@@ -485,9 +593,7 @@ Lookup available inventory for a range of skus.
     }
 
 ##### Payments
-The Cart submit accepts two types of payment : Credit and Cash. 
-
-** Don't want Fifth Gear to process the order? Use a Cash transaction **
+The Cart submit accepts two types of payment : **Credit and Cash**. Cash transaction will automatically be loaded into Fifth Gear without requiring any credit card data.
 
     "Payment": {
       "IsOnAccountPayment": "false",
