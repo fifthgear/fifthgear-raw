@@ -346,6 +346,7 @@ Lookup available inventory for a range of skus.
 --------------------
 
 ##OrderStatusBulkLookup
+This API will return the current order status for all orders loaded into Fifth Gear via the API (Order Submit).  Any orders created directly in our CRM module will not be included in the data set returned from this API.
 
 ####URL
 /v2.0/CommerceServices.svc/OrderStatusBulkLookup
@@ -363,6 +364,7 @@ Lookup available inventory for a range of skus.
     }
 
 #### Response
+
 
     {
       "OperationRequest": null,
