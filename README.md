@@ -1,7 +1,36 @@
 #Fifth Gear RAW API - **WORKING DRAFT**
 
 
-This document covers the guidelines for interacting with a specific clients Warehouse Platform. This is a living document and is currently about 70% complete.
+The [Fifth Gear](http://infifthgear.com) API acts as the secure bridge between our software and your ecommerce platform, allowing it to automatically send us orders that are downloaded and fulfilled in our warehouses.  Additionally, you can request your supply chain data from our system that will help you efficiently run your business, including inventory quantities, item attributes, order status, tracking numbers, and more.  Our API can seamlessly integrate with any ecommerce platform, removing the chance for any unnecessary changes.              
+Below is conceptual documentation related to the types of data that can be automatically requested from our system.  Each number represents a different request, signifying a different interaction, or bridge, between your system and ours.  
+
+1. **Item lookup** - your ecommerce platform can request different attributes of a specific product and our system will return the following details and more.
+
+      - **Product** - name, category, description, item attributes, UPC codes, personalization information, model numbers and model attributes, related items, unit of measurement, alias item numbers, item type (physical or virtual), special order item status, and more.   
+      - **Pricing** - retail pricing, promotional pricing, discounts, and even more customization.  
+      - **Ecommerce Logic** - Availability status, inventory, gift card information, gift status, return policies, drop ship status, shipping information, sales price text,
+      - **Kitting** - kitting information, required components, pricing, ID numbers, kit grouping data.
+
+2. **Item Inventory Lookup** - your ecommerce platform can request the available quantity on hand (inventory less quantity on sales order) of a specific item, as well as the next available date and active/inactive status.
+
+3. **Item Inventory Bulk Lookup** - your ecommerce platform can make a request to return the quantity available over a range of consecutively numbered items for easy item lookup. 
+
+4.  **Export Item Personalization Data** - if you offer any sort of personalization items in your product line, your ecommerce platform can request the possible personalization(s) associated with each product.  Our system will return one or more template input options, their specific template identifiers, names, and customer prompts for typing in their desired customization.  For example, if your product offers an engraving option for the customer's name and birth place, those would be two different templates returned or submitted with all of their respective information included.
+
+5.  **Order Status Lookup by Reference Number** - by submitting an order reference number, our system can return shipping details such as the date the order was shipped, the web order number, our system's order number, the customer's number, the ship status, the SKU, and the item name.  Additionally, there will be carrier specific details such as carrier name, the tracking number, and the quantity shipped. 
+
+6. **Order Status Bulk Lookup** - This API will give you the current order status for all orders loaded into our system by the external website(s).  Any orders created directly in our CRM module will not be included in the data set returned from this API.
+
+7. **Cart Submit** - This is the mechanism through which your ecommerce platform will submit orders to our warehouse management system.  Alternatively, your ecommerce platform can request information from past orders to display, such as in the case of when a customer logs in and views their order history.  The following information and more is transmitted through this action:
+
+   - **Customer information** - name, email, customer number, and fax.
+   -  **Shipping information** - shipping price, address, gift address, organization, and carrier. 
+   -  **Order information** - discounts, items, price, currency type, comments, order type, date, order number, and source code.
+   - **Billing** - Billing can be handled in one of two ways.  Your company can settle the transaction on your side before sending the prepaid order over to our warehouse system for shipping, or we can process and settle the transaction for you.
+      - **Prepaid** - check number, check date, and order amount.
+      - **Fifth Gear processes transaction** - credit card information including: card holder, billing address, authorization amount, CVV, authorization status, reference number, and authorization processor.  
+
+
 
 --------------------
 
