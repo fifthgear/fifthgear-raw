@@ -5,10 +5,9 @@ The [Fifth Gear](http://infifthgear.com) API acts as the secure bridge between o
 Below is conceptual documentation related to the types of data that can be automatically requested from our system.  Each number represents a different request, signifying a different interaction, or bridge, between your system and ours.  
 
 1. **Item lookup** - your ecommerce platform can request different attributes of a specific product and our system will return the following details and more.
-
       - **Product** - name, category, description, item attributes, UPC codes, personalization information, model numbers and model attributes, related items, unit of measurement, alias item numbers, item type (physical or virtual), special order item status, and more.   
       - **Pricing** - retail pricing, promotional pricing, discounts, and even more customization.  
-      - **Ecommerce Logic** - Availability status, inventory, gift card information, gift status, return policies, drop ship status, shipping information, sales price text,
+      - **Ecommerce Logic** - Availability status, inventory, gift card information, gift status, return policies, drop ship status, shipping information, sales price text.
       - **Kitting** - kitting information, required components, pricing, ID numbers, kit grouping data.
 
 2. **Item Inventory Lookup** - your ecommerce platform can request the available quantity on hand (inventory less quantity on sales order) of a specific item, as well as the next available date and active/inactive status.
@@ -375,7 +374,7 @@ Lookup available inventory for a range of skus.
 --------------------
 
 ##OrderStatusBulkLookup
-This API will return the current order status for all orders loaded into Fifth Gear via the API (Order Submit).  Any orders created directly in our CRM module will not be included in the data set returned from this API.
+This API will give you the current order status for all orders loaded into our system by the external website(s).  Any orders created directly in our CRM module will not be included in the data set returned from this API.
 
 ####URL
 /v2.0/CommerceServices.svc/OrderStatusBulkLookup
