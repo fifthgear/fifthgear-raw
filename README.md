@@ -49,7 +49,7 @@ For all requests you must provide a CompanyID, Username and Password. If you are
 
 In this example we will be looking up the inventory levels for a specific item in our warehouses.
 
-**POST:** https://commerceservices.infifthgear.com/test/v2.0/CommerceServices.svc/Rest/ItemInventoryLookup
+**POST:** https://commerceservicestest.infifthgear.com/v2.0/CommerceServices.svc/Rest/ItemInventoryLookup
 
 **Headers** 
 
