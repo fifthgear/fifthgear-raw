@@ -35,7 +35,7 @@ Below is conceptual documentation related to the types of data that can be autom
 
 ##Base API URL 
 
-- **TEST** https://commerceservices.infifthgear.com/test/v2.0/CommerceServices.svc/Rest
+- **TEST** https://commerceservicestest.infifthgear.com/v2.0/CommerceServices.svc/Rest
 - **PRODUCTION** https://commerceservices.infifthgear.com/v2.0/CommerceServices.svc/Rest
 
 --------------------
