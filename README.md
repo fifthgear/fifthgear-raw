@@ -229,10 +229,8 @@ Lookup available inventory for a range of skus.
 
     {
         "CompanyId":"CompanyID", 
-        "Request": {
-            "startRange" : 1, // Starting index
-            "endRange" : 3 // Ending Index.
-        }
+        "startRange" : 1, // Starting index
+        "endRange" : 3 // Ending Index.
     }
 
 #### Response
