@@ -1,5 +1,6 @@
-#Fifth Gear RAW API - **WORKING DRAFT**
+#Fifth Gear RAW API - **PRE SEPT 1st 2015 Version**
 
+**NOTE: [Official Fifth Gear API Documentation has moved here](http://docs.infifthgear.com/Default.aspx)**
 
 The [Fifth Gear](http://infifthgear.com) API acts as the secure bridge between our software and your ecommerce platform, allowing it to automatically send us orders that are downloaded and fulfilled in our warehouses.  Additionally, you can request your supply chain data from our system that will help you efficiently run your business, including inventory quantities, item attributes, order status, tracking numbers, and more.  Our API can seamlessly integrate with any ecommerce platform, removing the chance for any unnecessary changes.              
 Below is conceptual documentation related to the types of data that can be automatically requested from our system.  Each number represents a different request, signifying a different interaction, or bridge, between your system and ours.  
