@@ -384,12 +384,11 @@ This API will give you the current order status for all orders loaded into our s
 
     {
         "CompanyId":"CompanyID", 
-        "Request": {
-            "FromDate" : /Date(1387721954000-0500)/,  // .NET Datetime String 
-            "ToDate" : /Date(1388067628000-0500)/, 
-            "StartRange" : 1,
-            "EndRange" : 10
-        }
+        "Request": null
+        "FromDate" : /Date(1387721954000-0500)/,  // .NET Datetime String 
+        "ToDate" : /Date(1388067628000-0500)/, 
+        "StartRange" : 1,
+        "EndRange" : 10
     }
 
 #### Response
